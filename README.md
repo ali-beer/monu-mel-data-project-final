@@ -41,7 +41,7 @@ With requirements installed:
 **Streamlit App:**
 `streamlit run streamlitapp.py`
 
-#### Optional additional analysis
+### Optional additional analysis
 Use Australia’s Mothers and Babies data on maternal age, smoking, low birth weight and preterm birth and compare to AEDC data
 AEDC data: https://www.aedc.gov.au/resources/detail/public-table-by-statistical-area-level-(sa3)-2009-2018 
 
@@ -51,7 +51,7 @@ AEDC data: https://www.aedc.gov.au/resources/detail/public-table-by-statistical-
 **AEDC data:** 
 2009, 2012, 2015, 2018
 
-#### Further information
+### Further information
 AEDC data: https://www.aedc.gov.au/data/downloads 
 
 ABS Census data: https://www.abs.gov.au/census/find-census-data/historical 
