@@ -16,13 +16,9 @@ A supervised learning regression and classification machine learning model would
 Note: A rule of thumb for determining number of trees: the more estimators you have the better the results. However, more estimators will require more training time and data could be too ‘noisy’ to make good predictions.
 
 ### Data
-AEDC data is collected on children during their first year of full-time school. AEDC age is based on the student’s reported date of birth and the date on which the Instrument was completed by the teacher. This variable is available in years and varies by state depending on the first year of compulsory school starting age. Age variables include:
--	under five years
--	five years
--	six years
--	over six years.
-
 This project will use 2018 AEDC data and 2016 ABS census data. Data will be reported by Statistical Area level 2 for Victoria. 
+
+AEDC data is collected on children during their first year of full-time school. AEDC age is based on the student’s reported date of birth and the date on which the Instrument was completed by the teacher. This variable is available in years and varies by state depending on the first year of compulsory school starting age.
 
 In Victoia all children must be enrolled in a school in the year they turn 6, which is the compulsory school-starting age.
 Children born in 2012 will be turning 4 years old in 2016 (Census data) and turning 6 years old in 2018 (AEDC data). 
