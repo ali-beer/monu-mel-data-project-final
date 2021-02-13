@@ -53,13 +53,5 @@ AEDC data: https://www.aedc.gov.au/resources/detail/public-table-by-statistical-
 
 ## Further information
 AEDC data: https://www.aedc.gov.au/data/downloads 
--	2018
--	2015
--	2012
--	2009
 
 ABS Census data: https://www.abs.gov.au/census/find-census-data/historical 
--	2011
--	2006
--	2001
--	1996
