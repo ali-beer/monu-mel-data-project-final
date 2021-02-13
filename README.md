@@ -6,16 +6,14 @@
 Predictors of developmental vulnerability in children.
 
 ### Rationale 
-The Australian Early Development Census (AEDC) provides an insight at a community level into the learning and development needs of young children. The AEDC is also a useful measure of future development and learning, indicating how well early childhood education programs have prepared them for future learning experiences. AEDC data is collected on individual children around Australia who are in their first year of full-time school. 
-Our group aims to use the AEDC data with ABS census data on labour force statistics to investigate factors driving developmental vulnerabilities in children. Data will be reported at Statistical Area Level 2 (SA2).
+The Australian Early Development Census (AEDC) provides an insight at a community level into the learning and development needs of young children. The AEDC is also a useful measure of future development and learning, indicating how well early childhood education programs have prepared them for future learning experiences. AEDC data is collected on individual children around Australia who are in their first year of full-time school. AEDC age is based on the student’s reported date of birth and the date on which the Instrument was completed by the teacher. This variable is available in years and varies by state depending on the first year of compulsory school starting age.  
+
+Our group aims to use the AEDC data with ABS census data on labour force statistics to investigate factors driving developmental vulnerabilities in children.
 
 ### Data
 This project will use 2018 AEDC data and 2016 ABS census data. Data will be reported by Statistical Area level 2 for Victoria. 
 
-AEDC data is collected on children during their first year of full-time school. AEDC age is based on the student’s reported date of birth and the date on which the Instrument was completed by the teacher. This variable is available in years and varies by state depending on the first year of compulsory school starting age.
-
-In Victoia all children must be enrolled in a school in the year they turn 6, which is the compulsory school-starting age.
-Children born in 2012 will be turning 4 years old in 2016 (Census data) and turning 6 years old in 2018 (AEDC data). 
+In Victoria, all children must be enrolled in a school in the year they turn 6, which is the compulsory school-starting age. Using the 2018 AEDC data for Victoria means the developmental scores represent children turning 6 years old. These children will be turning 4 years old in the 2016 Census data year. Information on their parents labor force status will be investigated as a predictor of their developmental vulnerability.
 
 **AEDC data by SA2:** https://www.aedc.gov.au/resources/detail/public-table-by-statistical-area-level-2-(sa2)-2009-2018 
 
