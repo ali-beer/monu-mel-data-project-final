@@ -45,10 +45,11 @@ With requirements installed:
 Use Australia’s Mothers and Babies data on maternal age, smoking, low birth weight and preterm birth and compare to AEDC data
 AEDC data: https://www.aedc.gov.au/resources/detail/public-table-by-statistical-area-level-(sa3)-2009-2018 
 
-Aust. Mothers and Babies data: 2003, 2012, 2015, 2018
-AEDC data: 2009, 2012, 2015, 2018
-State: Victoria
-Statistical Area Level 3 (SA3)
+**Aust. Mothers and Babies data:** 
+2003, 2012, 2015, 2018
+
+**AEDC data:** 
+2009, 2012, 2015, 2018
 
 ## Further information
 AEDC data: https://www.aedc.gov.au/data/downloads 
