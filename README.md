@@ -1,6 +1,6 @@
 ### Project proposal: Learning & development in children
 
-**Team members: Alison Beer, Jacob Sussmilch, Grace X**
+**Team members:** Alison Beer, Jacob Sussmilch, Grace X
 
 ### Topic 
 Predictors of developmental vulnerability in children.
@@ -36,8 +36,8 @@ A supervised learning regression and classification machine learning model would
 Note: A rule of thumb for determining number of trees: the more estimators you have the better the results. However, more estimators will require more training time and data could be too ‘noisy’ to make good predictions.
 
 ### Further information
-AEDC data: https://www.aedc.gov.au/data/downloads 
-ABS Census data: https://www.abs.gov.au/census/find-census-data/historical 
+**AEDC data:** https://www.aedc.gov.au/data/downloads 
+**ABS Census data:** https://www.abs.gov.au/census/find-census-data/historical 
 
 
 ### Optional additional analysis
