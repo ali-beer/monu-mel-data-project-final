@@ -1,4 +1,5 @@
-### Learning & Development In Children - Project Proposal
+### Project proposal
+### Learning & development in children
 
 ### Team members
 Alison Beer, Jacob Sussmilch, Grace X
