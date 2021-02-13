@@ -19,7 +19,7 @@ Children born in 2012 will be turning 4 years old in 2016 (Census data) and turn
 
 **AEDC data by SA2:** https://www.aedc.gov.au/resources/detail/public-table-by-statistical-area-level-2-(sa2)-2009-2018 
 
-**ABS census data by SA2:** Labour force status of one and two parent family / by age of youngest child (0-4 years) http://stat.data.abs.gov.au/Index.aspx?DataSetCode=ABS_C16_G44_SA# 
+**ABS census data by SA2:** Labour force status of one and two parent family / by age of youngest child (0-4 years)
 
 ### Setup
 With requirements installed:
@@ -30,7 +30,7 @@ With requirements installed:
 **Streamlit App:**
 `streamlit run streamlitapp.py`
 
-### Machine learning model
+### Machine learning
 A supervised learning regression and classification machine learning model would be best suited for this analysis. A random forest algorithm will be used to determine the relative importance of each variable.
 
 Note: A rule of thumb for determining number of trees: the more estimators you have the better the results. However, more estimators will require more training time and data could be too ‘noisy’ to make good predictions.
@@ -42,8 +42,7 @@ Note: A rule of thumb for determining number of trees: the more estimators you h
 
 
 ### Optional additional analysis
-Use Australia’s Mothers and Babies data on maternal age, smoking, low birth weight and preterm birth and compare to AEDC data
-AEDC data: https://www.aedc.gov.au/resources/detail/public-table-by-statistical-area-level-(sa3)-2009-2018 
+Use Australia’s Mothers and Babies data on maternal age, smoking, low birth weight and preterm birth and compare to AEDC data.
 
 **Aust. Mothers and Babies data:** 
 2003, 2012, 2015, 2018
