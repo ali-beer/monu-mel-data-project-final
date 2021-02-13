@@ -16,7 +16,7 @@ A supervised learning regression and classification machine learning model would
 Note: A rule of thumb for determining number of trees: the more estimators you have the better the results. However, more estimators will require more training time and data could be too ‘noisy’ to make good predictions.
 
 ### Timeframe
-AEDC data is collected on children during their first year of full-time school. AEDC age is based on the student’s reported date of birth and the date on which the Instrument was completed by the teacher. This variable is available in years and varies by state the first year of compulsory school starting age. Age variables include:
+AEDC data is collected on children during their first year of full-time school. AEDC age is based on the student’s reported date of birth and the date on which the Instrument was completed by the teacher. This variable is available in years and varies by state depending on the first year of compulsory school starting age. Age variables include:
 -	under five years
 -	five years
 -	six years
