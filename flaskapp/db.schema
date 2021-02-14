@@ -15,3 +15,80 @@ VALUES ( 'alisonbeer', 'alisonbeer.jpg');
 
 INSERT INTO team (name, image_file)
 VALUES ( 'jacobsussmilch', 'jacobsussmilch.jpg');
+
+CREATE TABLE IF NOT EXISTS "g44" (
+	"LFSFF_C16" TEXT,
+  "Labour force status Female" TEXT,
+  "LFSMF_C16" TEXT,
+  "Labour force status Male" TEXT,
+  "ASGS_2016" INTEGER,
+  "Region" TEXT,
+  "Value" INTEGER
+);
+CREATE TABLE IF NOT EXISTS "g45" (
+	"Sex" TEXT,
+  "LFSP_C16" TEXT,
+  "Labour force status" TEXT,
+  "ASGS_2016" INTEGER,
+  "Region" TEXT,
+  "Value" INTEGER
+);
+CREATE TABLE IF NOT EXISTS "communication" (
+	"code" TEXT,
+  "name" TEXT,
+  "total" INTEGER,
+  "on_track" INTEGER,
+  "at_risk" INTEGER,
+  "vulnerable" INTEGER,
+  "vulnerable_percentage" REAL
+);
+CREATE TABLE IF NOT EXISTS "emotional" (
+	"code" TEXT,
+  "name" TEXT,
+  "total" INTEGER,
+  "on_track" INTEGER,
+  "at_risk" INTEGER,
+  "vulnerable" INTEGER,
+  "vulnerable_percentage" REAL
+);
+CREATE TABLE IF NOT EXISTS "health" (
+	"code" TEXT,
+  "name" TEXT,
+  "total" INTEGER,
+  "on_track" INTEGER,
+  "at_risk" INTEGER,
+  "vulnerable" INTEGER,
+  "vulnerable_percentage" REAL
+);
+CREATE TABLE IF NOT EXISTS "social" (
+	"code" TEXT,
+  "name" TEXT,
+  "total" INTEGER,
+  "on_track" INTEGER,
+  "at_risk" INTEGER,
+  "vulnerable" INTEGER,
+  "vulnerable_percentage" REAL
+);
+CREATE TABLE IF NOT EXISTS "language" (
+	"code" TEXT,
+  "name" TEXT,
+  "total" INTEGER,
+  "on_track" INTEGER,
+  "at_risk" INTEGER,
+  "vulnerable" INTEGER,
+  "vulnerable_percentage" REAL
+);
+CREATE TABLE IF NOT EXISTS "oneormore" (
+	"code" TEXT,
+  "name" TEXT,
+  "total" INTEGER,
+  "vulnerable" INTEGER,
+  "vulnerable_percentage" REAL
+);
+CREATE TABLE IF NOT EXISTS "twoormore" (
+	"code" TEXT,
+  "name" TEXT,
+  "total" INTEGER,
+  "vulnerable" INTEGER,
+  "vulnerable_percentage" REAL
+);
