@@ -2179,6 +2179,25 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+.btn-custom-white {
+  color: #000;
+  background-color: transparent;
+  border-color: #6c757d;
+  margin-right: 6rem;
+}
+.btn-custom-white:hover {
+  background-color: #fff;
+}
+.btn-custom-dark-white {
+  color: #000;
+  background-color: transparent;
+  border-color: #6c757d;
+  margin-right: 6rem;
+}
+.btn-custom-dark-white:hover {
+  background-color: #f0f2f6;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #fed136;

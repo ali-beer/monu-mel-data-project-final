@@ -15,7 +15,7 @@ This project will use 2018 AEDC data and 2016 ABS census data. Data will be repo
 
 In Victoria, all children must be enrolled in a school in the year they turn 6, which is the compulsory school-starting age. Using the 2018 AEDC data for Victoria means the developmental scores represent children turning 6 years old. These children will be turning 4 years old in the 2016 Census data year. Information on their parents labor force status will be investigated as a predictor of their developmental vulnerability.
 
-**AEDC data by SA2:** https://www.aedc.gov.au/resources/detail/public-table-by-statistical-area-level-2-(sa2)-2009-2018 
+**AEDC data by SA2:** (https://www.aedc.gov.au/resources/detail/public-table-by-statistical-area-level-2-(sa2)-2009-2018)[https://www.aedc.gov.au/resources/detail/public-table-by-statistical-area-level-2-(sa2)-2009-2018]
 
 **ABS census data by SA2:** Labour force status of one and two parent family / by age of youngest child (0-4 years)
 
@@ -34,9 +34,13 @@ A supervised learning regression and classification machine learning model would
 Note: A rule of thumb for determining number of trees: the more estimators you have the better the results. However, more estimators will require more training time and data could be too ‘noisy’ to make good predictions.
 
 ### Further information
-**AEDC data:** https://www.aedc.gov.au/data/downloads 
+**AEDC data:** [https://www.aedc.gov.au/data/downloads](https://www.aedc.gov.au/data/downloads)
 
-**ABS Census data:** https://www.abs.gov.au/census/find-census-data/historical 
+**ABS Census data:** [https://www.abs.gov.au/census/find-census-data/historical](https://www.abs.gov.au/census/find-census-data/historical)
+
+**Useful Resources:**
+- [2018 AEDC Data Collection Technical Report](https://www.aedc.gov.au/Websilk/Handlers/ResourceDocument.ashx?id=54a02864-db9a-6d2b-9fad-ff0000a141dd)
+- [Report on the quality of 2016 Census data](https://www.abs.gov.au/websitedbs/d3310114.nsf/home/Independent+Assurance+Panel/$File/CIAP+Report+on+the+quality+of+2016+Census+data.pdf)
 
 
 ### Optional additional analysis
