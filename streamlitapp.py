@@ -6,22 +6,101 @@ from pandas_profiling import ProfileReport
 import pandas_profiling
 from streamlit_pandas_profiling import st_profile_report
 
-datasets = {"ABS - G44": ["data/g44.csv", "Census 2016, G44 Labour force status by sex of parents by age of dependent children for Couple families (SA2+)"], "ABS - G45": ["data/g45.csv", "Census 2016, G45 Labour force status by sex of parent by age of dependent children for one parent families (SA2+)"]}
+datasets = {
+    "ABS - G44": ["data/g44.csv", "Census 2016, G44 Labour force status by sex of parents by age of dependent children for Couple families (SA2+)"],
+    "ABS - G45": ["data/g45.csv", "Census 2016, G45 Labour force status by sex of parent by age of dependent children for one parent families (SA2+)"],
+    "AEDC - Social": [
+        "data/AEDC/social.csv",
+        """
+        The Australian Early Development Census (AEDC) is a population-based measure of how children in Australia have developed by the time they start their first year of full-time school. Teachers complete a research tool, the Australian version of the Early Development Instrument (the Instrument) for each child in their class. The Instrument measures five key areas, or domains, of early childhood development:
+        - physical health and wellbeing
+        - social competence
+        - emotional maturity
+        - language and cognitive skills (school-based)
+        - communication skills and general knowledge.
+        These areas are closely linked to the predictors of adult health, education and social outcomes. The Council of Australian Governments (COAG) has endorsed the AEDC as a national progress measure of early childhood development in Australia.
+        """
+        ],
+    "AEDC - Emotional": [
+        "data/AEDC/emotional.csv", 
+        """
+        The Australian Early Development Census (AEDC) is a population-based measure of how children in Australia have developed by the time they start their first year of full-time school. Teachers complete a research tool, the Australian version of the Early Development Instrument (the Instrument) for each child in their class. The Instrument measures five key areas, or domains, of early childhood development:
+        - physical health and wellbeing
+        - social competence
+        - emotional maturity
+        - language and cognitive skills (school-based)
+        - communication skills and general knowledge.
+        These areas are closely linked to the predictors of adult health, education and social outcomes. The Council of Australian Governments (COAG) has endorsed the AEDC as a national progress measure of early childhood development in Australia.
+        """
+        ],
+    "AEDC - Communication": ["data/AEDC/communication.csv", """
+        The Australian Early Development Census (AEDC) is a population-based measure of how children in Australia have developed by the time they start their first year of full-time school. Teachers complete a research tool, the Australian version of the Early Development Instrument (the Instrument) for each child in their class. The Instrument measures five key areas, or domains, of early childhood development:
+        - physical health and wellbeing
+        - social competence
+        - emotional maturity
+        - language and cognitive skills (school-based)
+        - communication skills and general knowledge.
+        These areas are closely linked to the predictors of adult health, education and social outcomes. The Council of Australian Governments (COAG) has endorsed the AEDC as a national progress measure of early childhood development in Australia.
+        """],
+    "AEDC - Health": ["data/AEDC/health.csv", """"
+        The Australian Early Development Census (AEDC) is a population-based measure of how children in Australia have developed by the time they start their first year of full-time school. Teachers complete a research tool, the Australian version of the Early Development Instrument (the Instrument) for each child in their class. The Instrument measures five key areas, or domains, of early childhood development:
+        - physical health and wellbeing
+        - social competence
+        - emotional maturity
+        - language and cognitive skills (school-based)
+        - communication skills and general knowledge.
+        These areas are closely linked to the predictors of adult health, education and social outcomes. The Council of Australian Governments (COAG) has endorsed the AEDC as a national progress measure of early childhood development in Australia.
+        """],
+    "AEDC - Language": ["data/AEDC/language.csv", """
+        The Australian Early Development Census (AEDC) is a population-based measure of how children in Australia have developed by the time they start their first year of full-time school. Teachers complete a research tool, the Australian version of the Early Development Instrument (the Instrument) for each child in their class. The Instrument measures five key areas, or domains, of early childhood development:
+        - physical health and wellbeing
+        - social competence
+        - emotional maturity
+        - language and cognitive skills (school-based)
+        - communication skills and general knowledge.
+        These areas are closely linked to the predictors of adult health, education and social outcomes. The Council of Australian Governments (COAG) has endorsed the AEDC as a national progress measure of early childhood development in Australia.
+        """],
+    "AEDC - One or more": ["data/AEDC/oneormore.csv", """
+        The Australian Early Development Census (AEDC) is a population-based measure of how children in Australia have developed by the time they start their first year of full-time school. Teachers complete a research tool, the Australian version of the Early Development Instrument (the Instrument) for each child in their class. The Instrument measures five key areas, or domains, of early childhood development:
+        - physical health and wellbeing
+        - social competence
+        - emotional maturity
+        - language and cognitive skills (school-based)
+        - communication skills and general knowledge.
+        These areas are closely linked to the predictors of adult health, education and social outcomes. The Council of Australian Governments (COAG) has endorsed the AEDC as a national progress measure of early childhood development in Australia.
+        """],
+    "AEDC - Two or more": ["data/AEDC/twoormore.csv", """
+        The Australian Early Development Census (AEDC) is a population-based measure of how children in Australia have developed by the time they start their first year of full-time school. Teachers complete a research tool, the Australian version of the Early Development Instrument (the Instrument) for each child in their class. The Instrument measures five key areas, or domains, of early childhood development:
+        - physical health and wellbeing
+        - social competence
+        - emotional maturity
+        - language and cognitive skills (school-based)
+        - communication skills and general knowledge.
+        These areas are closely linked to the predictors of adult health, education and social outcomes. The Council of Australian Governments (COAG) has endorsed the AEDC as a national progress measure of early childhood development in Australia.
+        """]
+    }
 
 # Sidebar
 with st.sidebar.header('Select Data'):
     dataset_selector = st.sidebar.selectbox(
     "Select what dataset you would like to explore.",
-    ("ABS - G44", "ABS - G45")
+    list(datasets.keys())
 )
 
 # Web App Title
 st.markdown(f'''
 # **Exploratory Data App**
 ---
+- This app provides a simple, first glance overview of our datasets, prior to our analysis.
 - Dataset Selector is in the sidebar :)
 
-Currently Exploring: {datasets[dataset_selector][1]}
+**Currently Exploring:** {dataset_selector}
+
+**Description:** {datasets[dataset_selector][1]}
+
+**Useful Resources:**
+- [2018 AEDC Data Collection Technical Report](https://www.aedc.gov.au/Websilk/Handlers/ResourceDocument.ashx?id=54a02864-db9a-6d2b-9fad-ff0000a141dd)
+- [Report on the quality of 2016 Census data](https://www.abs.gov.au/websitedbs/d3310114.nsf/home/Independent+Assurance+Panel/$File/CIAP+Report+on+the+quality+of+2016+Census+data.pdf)
 ''')
 
 # Can produce runtime error if datasize exceeds 50.0MB
@@ -76,10 +155,6 @@ pr = load_profile(df)
 
 st.header('**Input DataFrame**')
 st.write(df)
-
-if st.button('Download data'):
-    tmp_download_link = download_link(df, "abs_data.csv", 'Click here to download your data!')
-    st.markdown(tmp_download_link, unsafe_allow_html=True)
 
 st.write('---')
 st.header('**Profiling Report**')
