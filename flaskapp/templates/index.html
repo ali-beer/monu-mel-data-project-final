@@ -66,7 +66,7 @@
         <p>All information is reported by Statistical Area Level 2 in Victoria. Statistical Areas Level 2 (SA2) are medium-sized general purpose areas built up from whole Statistical Areas Level 1. Their purpose is to represent a community that interacts together socially and economically. </p>
       </div>
     </div>
-    <a class="btn btn-custom-white btn-xl text-uppercase js-scroll-trigger float-right" href="#view1">Next</a>
+    <a class="btn btn-custom-white btn-xl text-uppercase js-scroll-trigger float-right" href="#view2">Next</a>
     <br>
   </section>
 
@@ -76,20 +76,18 @@
         <h1>Analysis</h1>
       </div>
       <center><img src="static/img/achieving-work-life-balance.jpg" style="z-index: 2;" alt=""></center>
-      <div class="row"></div>
-    </div>
-    <a class="btn btn-custom-dark-white btn-xl text-uppercase js-scroll-trigger float-right" href="#view3">Next</a>
-    <br>
-  </section>
-
-  <section class="page-section" id="view2">
-    <div class="container">
-      <div class="row mb-5 text-center text-uppercase">
-        <h1>Analysis</h1>
+      <div class="row mb-5 justify-content-center">
+        <select class="form-select center" style="width: 75%;" aria-label="Default select example" onchange="map_selector(this.value);">
+          <option selected>Select a domain</option>
+          <option value="social">Social</option>
+          <option value="emotional">Emotional</option>
+          <option value="health">Health</option>
+          <option value="communication" ac>Communication</option>
+          <option value="language">Language</option>
+          <option value="oneormore">One or more</option>
+        </select>
       </div>
-      <div class="row">
-        <div class='tableauPlaceholder' id='viz1613548777458' style='position: relative; height: 500px;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;MF&#47;MFJD38979&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;MFJD38979' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;MF&#47;MFJD38979&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1613548777458');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-      </div>
+      <div class="row mb-3" id="map"></div>
     </div>
     <a class="btn btn-custom-dark-white btn-xl text-uppercase js-scroll-trigger float-right" href="#view3">Next</a>
     <br>
@@ -114,18 +112,18 @@
         <h1>Explore the Data Yourself</h1>
       </div>
       <div class="row text-center mb-3">
-        <p>Check out our Exploritory Data App to get a overview of our data sources.</p>
-        <a class="btn btn-primary btn-xl text-uppercase" href="/eda">EDA</a>
+        <p>Check out our Exploritory Data App to get a overview of our data sources. Or fetch the data yourself from our API.</p>
       </div>
-      <div class="row text-center">
-        <p>Or fetch the data yourself from our API.</p>
-        <a class="btn btn-primary btn-xl text-uppercase" href="/api">API</a>
+      <div class="row justify-content-center">
+        <a class="btn btn-primary btn-xl text-uppercase mr-5" style="width: 20%;" href="/eda">EDA</a>
+        <a class="btn btn-primary btn-xl text-uppercase" style="width: 20%;" href="/api">API</a>
       </div>
     </div>
   </section>
 
   <!-- Bootstrap core JavaScript -->
   <script src="static/vendor/jquery/jquery.js"></script>
+  <script src="static/js/ml_selector.js"></script>
   <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
