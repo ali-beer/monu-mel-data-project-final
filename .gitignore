@@ -1,4 +1,2 @@
 venv/
-flaskapp/Procfile
-data/
-./streamlitapp.py
+Procfile
