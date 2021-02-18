@@ -7,8 +7,6 @@ import pandas_profiling
 from streamlit_pandas_profiling import st_profile_report
 
 datasets = {
-    "ABS - G44": ["data/g44.csv", "Census 2016, G44 Labour force status by sex of parents by age of dependent children for Couple families (SA2+)"],
-    "ABS - G45": ["data/g45.csv", "Census 2016, G45 Labour force status by sex of parent by age of dependent children for one parent families (SA2+)"],
     "AEDC - Social": [
         "data/AEDC/social.csv",
         """
